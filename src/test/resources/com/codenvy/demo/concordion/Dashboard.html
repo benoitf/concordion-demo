@@ -1,0 +1,21 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<body>
+
+
+<h1>Pre-requisites (Given)</h1>
+<ul>
+    <li>the dashboard page <span c:set="#dashboardUrl">https://nightly.codenvy-stg.com/next-dashboard</span></li>
+</ul>
+
+
+
+<h1>Action</h1>
+<ul>
+    <li>the user goes on <span c:assertEquals="go(#dashboardUrl)">dashboard page</span></li>
+</ul>
+
+<h1>After</h1>
+Then the page has the <span c:assertEquals="getTitle()">Codenvy – User Dashboard v2</span> title
+
+</body>
+</html>

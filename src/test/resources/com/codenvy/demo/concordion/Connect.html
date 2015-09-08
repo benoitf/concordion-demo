@@ -1,0 +1,22 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<body>
+
+
+<h1>Pre-requisites (Given)</h1>
+<ul>
+    <li>the username <span c:set="#username">cdvyconcordion@yopmail.com</span></li>
+    <li>the password <span c:set="#password">cdvyconcordion2015</span></li>
+    <li>the login page <span c:set="#codenvyUrl">https://nightly.codenvy-stg.com/site/login</span></li>
+</ul>
+
+
+
+<h1>Action</h1>
+<ul>
+    <li>the user <span c:assertEquals="login(#username, #password, #codenvyUrl)">fill user</span> on the login page</li>
+    <li>the user <span c:assertEquals="submit()">submit</span> on the login page</li>
+</ul>
+
+
+</body>
+</html>
